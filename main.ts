@@ -19,3 +19,4 @@ let mySprite = sprites.create(img`
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
 game.splash(game.askForNumber("", 4))
+    

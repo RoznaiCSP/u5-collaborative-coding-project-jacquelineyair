@@ -1,5 +1,5 @@
 {
-    "name": "U5 Collaborative Coding Project",
+    "name": "U5 Collaborative Coding Project - Copy",
     "description": "",
     "dependencies": {
         "device": "*"
@@ -20,5 +20,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
