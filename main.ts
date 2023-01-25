@@ -19,3 +19,4 @@ let mySprite = sprites.create(img`
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
 let birthday = game.askForNumber("When it's your birthday?", 6)
+let name = game.askForString("What's your name?", 12)
