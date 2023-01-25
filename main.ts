@@ -1,5 +1,5 @@
 // Don't forget to comment your code as you work!
-scene.setBackgroundColor(13)
+scene.setBackgroundColor(6)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -18,4 +18,8 @@ let mySprite = sprites.create(img`
     . . c b d d d d d 5 5 5 b b . . 
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
-game.splash(game.askForNumber("", 4))
+let birthday = game.askForNumber("When it's your birthday?", 4)
+let name = game.askForString("What's your name?", 12)
+
+
+
