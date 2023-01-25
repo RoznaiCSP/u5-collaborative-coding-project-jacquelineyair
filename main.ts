@@ -1,5 +1,5 @@
 // Don't forget to comment your code as you work!
-scene.setBackgroundColor(13)
+scene.setBackgroundColor(6)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
