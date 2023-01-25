@@ -20,3 +20,8 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 let birthday = game.askForNumber("When it's your birthday?", 6)
 let name = game.askForString("What's your name?", 12)
+if (birthday == name) {
+	
+} else {
+	
+}
