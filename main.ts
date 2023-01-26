@@ -1,4 +1,6 @@
 // Don't forget to comment your code as you work!
+let notPlanning: Sprite = null
+let planning: Sprite = null
 scene.setBackgroundColor(6)
 let mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
@@ -21,7 +23,37 @@ let mySprite = sprites.create(img`
 let birthday = game.askForNumber("When it's your birthday?", 6)
 let name = game.askForString("What's your name?", 12)
 if (birthday < 20) {
-	
+    planning = sprites.create(img`
+        . 6 6 6 6 6 6 6 6 6 6 6 . . . . 
+        6 6 6 6 6 6 6 5 5 6 6 6 6 6 . . 
+        5 5 5 5 5 5 5 5 5 5 6 6 6 6 . . 
+        6 6 6 6 6 6 6 6 6 6 6 6 6 6 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 4 4 5 5 5 f . . f f 
+        . . f 4 5 5 f f 5 5 6 f . f 5 f 
+        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
+        . . . f 5 5 5 5 5 4 5 5 f f . . 
+        . . . f 5 f f f 5 f f 5 f . . . 
+        . . . f f . . f f . . f f . . . 
+        `, SpriteKind.Player)
 } else {
-	
+    notPlanning = sprites.create(img`
+        . . 4 4 4 . . . . 4 4 4 . . . . 
+        . 4 5 5 5 e . . e 5 5 5 4 . . . 
+        4 5 5 5 5 5 e e 5 5 5 5 5 4 . . 
+        4 5 5 4 4 5 5 5 5 4 4 5 5 4 . . 
+        e 5 4 4 5 5 5 5 5 5 4 4 5 e . . 
+        . e e 5 5 5 5 5 5 5 5 e e . . . 
+        . . e 5 f 5 5 5 5 f 5 e . . . . 
+        . . f 5 5 5 4 4 5 5 5 f . . f f 
+        . . f 4 5 5 f f 5 5 6 f . f 5 f 
+        . . . f 6 6 6 6 6 6 4 4 f 5 5 f 
+        . . . f 4 5 5 5 5 5 5 4 4 5 f . 
+        . . . f 5 5 5 5 5 4 5 5 f f . . 
+        . . . f 5 f f f 5 f f 5 f . . . 
+        . . . f f . . f f . . f f . . . 
+        `, SpriteKind.Player)
 }
