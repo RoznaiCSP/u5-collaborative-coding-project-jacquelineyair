@@ -20,7 +20,7 @@ let mySprite = sprites.create(img`
     . . c b d d d d d 5 5 5 b b . . 
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
-let birthday = game.askForNumber("When it's your birthday?", 6)
+let birthday = game.askForNumber("How many days are left till your birthday?", 4)
 let name = game.askForString("What's your name?", 12)
 if (birthday < 20) {
     planning = sprites.create(img`
