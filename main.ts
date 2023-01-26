@@ -17,6 +17,3 @@ let mySprite = sprites.create(img`
     . c d d d d d d 5 5 5 5 5 d b .
     . . c b d d d d d 5 5 5 b b . .
     . . . c c c c c c c c b b . . .
-`, SpriteKind.Player)
-game.splash(game.askForNumber("", 4))
-    
