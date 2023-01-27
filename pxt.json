@@ -1,8 +1,10 @@
 {
-    "name": "U5 Collaborative Coding Project",
+    "name": "Birthday",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "animation": "*",
+        "Color Fading": "github:jwunderl/pxt-color#v0.2.2"
     },
     "files": [
         "main.blocks",
