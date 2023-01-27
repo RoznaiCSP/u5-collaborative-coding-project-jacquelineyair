@@ -132,10 +132,10 @@ scene.setBackgroundImage(img`
     222222e2ebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbe2e222222
     222222eeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeee222222
     `)
-birthday = game.askForNumber("How many days are left till your birthday?", 4)
+birthday = game.askForNumber("What month were you born in?", 2)
 let name = game.askForString("What's your name?", 12)
-game.splash(name)
-if (birthday < 20) {
+game.splash(name, "Click A to continue...")
+if (birthday < 3) {
     planning = sprites.create(img`
         . 6 6 6 6 6 6 6 6 6 6 6 . . . . 
         6 6 6 6 6 6 6 5 5 6 6 6 6 6 . . 
