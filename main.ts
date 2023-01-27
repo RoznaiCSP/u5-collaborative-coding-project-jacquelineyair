@@ -3,13 +3,9 @@ enum ActionKind {
     Idle,
     Jumping
 }
-function age (birthday: number) {
-    return birthday
-}
 // Don't forget to comment your code as you work!
 let notPlanning: Sprite = null
 let planning: Sprite = null
-let birthday = 0
 scene.setBackgroundImage(img`
     eeeee2222222222222222222222222222222222ee2222ee2222ee2222222eeeee2222222222222222222222222222222222ee22222eeee222ee2eeeee2222222222222222222222222222222222ee222
     222eeeee22222222222222222222222222222eee2222eeee2222ee222222222eeeee22222222222222222222222222222eee2222eeeee222ee22222eeeee22222222222222222222222222222eee2222
@@ -132,10 +128,10 @@ scene.setBackgroundImage(img`
     222222e2ebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbe2e222222
     222222eeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeee222222
     `)
-birthday = game.askForNumber("What month were you born in?", 2)
+let birthday = game.askForNumber("How many months till your bday month?", 2)
 let name = game.askForString("What's your name?", 12)
 game.splash(name, "Click A to continue...")
-if (birthday < 3) {
+if (birthday < 2) {
     planning = sprites.create(img`
         . 6 6 6 6 6 6 6 6 6 6 6 . . . . 
         6 6 6 6 6 6 6 5 5 6 6 6 6 6 . . 
